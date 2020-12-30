@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta property="og:title" content="knock knock">
+    <meta property="og:description" content="open the door">
+    <meta property="og:image" content="https://img4.goodfon.com/wallpaper/nbig/0/b4/rozhdestvo-christmas-merry-christmas-sneg-snow-novyi-god-xma.jpg">
+    <link rel="shortcut icon" href="https://w7.pngwing.com/pngs/319/721/png-transparent-smiley-favicon-star-smile-s-angle-text-smiley.png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+    <title>welcome! knock studio</title>
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+    
+    
+    
+<style>
+        * {
+            font-family: 'Noto Serif KR', serif;
+        }
+
+        body {
+            background-color: #0f5f53;
+        }
+
+        .envelope {
+            width: 300px;
+            height: 500px;
+            background-image: url('pngfind.com-door-png-1029502.png');
+            background-size: contain;
+            background-position: center;
+            margin: 80px auto 0px auto;
+            cursor: pointer;
+        }
+
+        .msg {
+            color: white;
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        .letter-close {
+            display: block;
+        }
+        .letter-open{
+            display: none;
+        }
+
+        .rtan {
+            background-color: white;
+            width: 300px;
+            height: 300px;
+            background-image: url('http://mp4-2-gif.com/dl.php?f=20201230170443-e7814a369d.gif');
+            background-size: cover;
+            background-position: center;
+            margin: 100px auto 0px auto;
+            border-radius: 10px;
+            border: 5px solid yellow;
+            box-shadow: 0px 0px 5px 0px yellow;
+            cursor: pointer;
+        }
+
+    
+        
+        @media screen and (max-width: 760px) {
+            
+            .rtan {
+                width: 200px;
+                height: 200px;
+                margin: 100px auto 0px auto;
+            }
+            h1{
+             font-size: 25px;
+            }
+            .envelope {
+             margin: 90px auto 0px auto;
+            }
+         }
+    </style>
+
+    <script>
+        
+        function open_letter(){
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+
+        }
+        function go_rtan() {
+
+            window.location.href="https://youtube.com/channel/UCgS92XgpR90TR7WO3i8smbg";
+        }
+    </script>
+   
+</head>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()">
+        </div>
+        <h2 class="msg">open the door!</h2>
+    </div>
+    <div class="letter-open">
+        <div class="rtan"onclick="go_rtan()"></div>
+        <h3 style="color: white; text-align: center; margin-top: 20px;">Welcome to knock studio!</h3>
+        <h4 style="color: black; text-align: center;">넣고싶은 말 있으면 보내보시오 주안<br>배경색, 디자인 바꾸기 가능함<br>위에 박스 누르면 너의 채널로 이동</h3>
+        
+    </div>
+</body>
+
+</html>
